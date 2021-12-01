@@ -13,6 +13,8 @@ import org.springframework.web.client.RestTemplate;
 @RestController
 public class Cep {
 
+	
+	
 	@GetMapping("/cep/{cep}")
 	public ResponseEntity<Object> getCep(@PathVariable String cep) {
 		String pattern = "[0-9]+";
